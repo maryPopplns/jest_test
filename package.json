@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack"
+    "build": "webpack",
+    "init": "jest --init",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,14 @@
   },
   "homepage": "https://github.com/maryPopplns/jest_test#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.0.6",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.0.0"
+  },
+  "dependencies": {
+    "babel-jest": "^27.0.6"
   }
 }
